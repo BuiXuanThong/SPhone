@@ -1,5 +1,5 @@
 <h4 style="margin:70px 0 10px 50px ">Quản lý đơn hàng</h4>
-<table class="table table-striped" style="margin: 20px">
+<table class="table table-striped" style="width: 95%;margin: 0 auto;">
   <thead>
     <tr>
       <th scope="col">STT</th>
@@ -14,6 +14,11 @@
   <tbody>
     <?php
     $countOrderItem = count($data["orderItem"]);
+    if ($countOrderItem == 0) {
+      echo '<tr>
+        <td colspan="7" style="text-align: center;">Chưa có đơn hàng</td>
+      </tr>';
+    }
     for ($i = 0; $i < $countOrderItem; $i++) {
       echo '<tr>
         <td>' . ($i + 1) . '</td>

@@ -84,10 +84,10 @@
                                     alt="Card image cap">
                             </a>';
             echo        '<div class="card-body">';
-            echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
+            echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title" style="color: #444">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
                                 <hr />';
-            echo            '<span class="card-text">' . number_format($data["allProductCategory"][$i]["discount"]) . 'đ</span>';
-            echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
+            echo            '<span class="card-text"  style="color: red; font-weight: bold">' . number_format($data["allProductCategory"][$i]["discount"]) . 'đ</span>';
+            echo            '<span style="margin-left:12px; text-decoration: line-through; font-weight: 600; color: #707070;" class="card-text">';
             if ($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["price"]) . 'đ';
             echo '</span>';
             echo        '</div>';

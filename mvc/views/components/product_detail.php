@@ -25,12 +25,17 @@
       </div>
       <div class="col-md-6">
 
-        <h5><?= $data["productItem"]["title"] ?></h5>
+        <h3><?= $data["productItem"]["title"] ?></h3>
         <hr>
-        <p><span class="mr-1"><strong><?= number_format($data["productItem"]["discount"]) . ' đ' ?></strong></span>
-          <span style="margin-left:12px; text-decoration: line-through;" class="mr-1">
+        <p><span class="mr-1" style="color: red"><strong><?= number_format($data["productItem"]["discount"]) . ' đ' ?></strong></span>
+          <span style="margin-left:12px; text-decoration: line-through; font-weight: 600; color: #707070;" class="mr-1">
             <?php
             if ($data["productItem"]["discount"] != 0) echo number_format($data["productItem"]["price"]) . ' đ';
+            ?>
+          </span>
+          <span style="font-weight: 600; display: inline-block; padding: 0 5px; background-color: #f52f32; color: white; font-size: 12px; border-radius: 3px;">
+            <?php
+              echo '-'. 100 - round(($data["productItem"]["discount"] / $data["productItem"]["price"]) * 100) . '%';
             ?>
           </span>
         </p>
@@ -96,24 +101,26 @@
 
   </div>
 
-  <h3 style="color:red; margin-top:10px">Các sản phẩm cùng danh mục</h3>
+  <h3 style="color:red; margin-top:30px; margin-bottom: 20px">Các sản phẩm cùng danh mục</h3>
   <div class="showproduct mt-3">
     <?php
     echo '<div class="container">';
     echo '<div class="row">';
     for ($i = 0; $i < 4; $i++) {
-      echo '<div class="col-sm">';
+      echo '<div class="col-md-3 col-xs-12" style="margin-bottom: 20px">';
       echo    '<div class="card">';
+      // top left discount tag
+      echo '<div class="discount-tag" style="position: absolute; top: 0; left: 0; background-color: red; color: white; padding: 5px; border-radius: 0 0 15px 15px; font-weight: 600; font-size: 14px; width: 50px; text-align: center">-' . number_format(100 - $data["allProductCategory"][$i]["discount"] /  $data["allProductCategory"][$i]["price"] * 100, 0) . '%</div>';
       echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '">
                         <img class="card-img-top"
                             src="' . $data["allProductCategory"][$i]["thumbnail"] . '"
                             alt="Card image cap">
                     </a>';
       echo        '<div class="card-body">';
-      echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
+      echo            '<a id="taga" href="http://localhost/SPhone/Home/productDetail/' . $data["allProductCategory"][$i]["id"] . '"><h5 class="card-title" style="color: #444">' . $data["allProductCategory"][$i]["title"] . '</h5></a>
                         <hr />';
-      echo            '<span class="card-text">' . number_format($data["allProductCategory"][$i]["discount"]) . 'đ</span>';
-      echo            '<span style="margin-left:12px; text-decoration: line-through;" class="card-text">';
+      echo            '<span class="card-text" style="color: red; font-weight: bold">' . number_format($data["allProductCategory"][$i]["discount"]) . 'đ</span>';
+      echo            '<span style="margin-left:12px; text-decoration: line-through; font-weight: 600; color: #707070;" class="card-text">';
       if ($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["price"]) . 'đ';
       echo '</span>';
       echo        '</div>';
