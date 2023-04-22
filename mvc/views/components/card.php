@@ -19,7 +19,16 @@
       <?php
       $total = 0;
       for ($i = 0; $i < $data["countOrder"]; $i++) {
-        $total += $data["num"][$i] * $data["orderDetails"][$i]["price"];
+        $display_price = 0;
+        if($data["orderDetails"][$i]["discount"] > 0) {
+          $total += $data["num"][$i] * $data["orderDetails"][$i]["discount"];
+          $display_price = $data["orderDetails"][$i]["discount"];
+        }
+        else {
+          $total += $data["num"][$i] * $data["orderDetails"][$i]["price"];
+          $display_price = $data["orderDetails"][$i]["price"];
+        }
+        
         echo '<div class="mb-3">
               <div class="pt-4 wish-list">
                 <div class="row mb-4">
@@ -39,7 +48,8 @@
                       <div class="d-flex justify-content-between">
                         <div>
                           <h5>' . $data["orderDetails"][$i]["title"] . '</h5>
-                          <p class="mb-3 text-muted text-uppercase small">Số lượng: ' . number_format($data["orderDetails"][$i]["price"]) . ' đ</p>
+                          <p class="mb-3 text-muted text-uppercase small">Giá gốc: ' . number_format($data["orderDetails"][$i]["price"]) . ' đ</p>
+                          <p class="mb-3 text-muted text-uppercase small">Giảm còn: ' . number_format($data["orderDetails"][$i]["discount"]) . ' đ</p>
                           <p class="mb-3 text-muted text-uppercase small">Số lượng: ' . $data["num"][$i] . '</p>
                         </div>
                       </div>
@@ -48,7 +58,7 @@
                           <p style="color:red; cursor:pointer" onclick="deleteCart(' . $data["orderDetails"][$i]["id"] . ')" href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
                               class="fas fa-trash-alt mr-1"></i> Xóa </p>
                         </div>
-                        <p class="mb-0"><span><strong id="summary">' . number_format($data["num"][$i] * $data["orderDetails"][$i]["price"]) . ' đ</strong></span></p class="mb-0">
+                        <p class="mb-0"><span><strong id="summary">' . number_format($data["num"][$i] * $display_price) . ' đ</strong></span></p class="mb-0">
                       </div>
                     </div>
                   </div>
@@ -72,7 +82,7 @@
       <div class="mb-3">
         <div class="pt-4">
 
-          <h5 class="mb-4">Cho phép thanh toán</h5>
+          <h5 class="mb-4">Phương thức thanh toán</h5>
 
           <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" alt="Visa">
           <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" alt="American Express">
@@ -97,7 +107,7 @@
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
               <div>
-                <strong>Tổng số tiền cần phải thanh toán:</strong>
+                <strong>Tổng:</strong>
               </div>
               <span><strong><?= number_format($total) ?> đ</strong></span>
             </li>

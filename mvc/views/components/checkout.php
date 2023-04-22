@@ -15,7 +15,7 @@
       <!-- Grid column -->
       <div class="col-lg-6 mb-5 mb-lg-0">
 
-        <h5 class="mb-4 pb-1">Thủ tục thanh toán</h5>
+        <h5 class="mb-4 pb-1">Thông tin thanh toán</h5>
 
         <!-- Grid row -->
         <form method="POST" action="http://localhost/SPhone/OrderAdmin/addOrderSuccess">
@@ -50,7 +50,7 @@
             <input type="email" name="email" id="form19" class="form-control" placeholder="Email">
           </div>
 
-          <a style="color:white;text-decoration:none"><button onclick=checkOrderCheckout() name="btnCheckout" class="btn btn-primary btn-block">Đặt hàng</button></a>
+          <a style="color:white;text-decoration:none;margin: 30px"><button onclick=checkOrderCheckout() name="btnCheckout" class="btn btn-primary btn-block">Đặt hàng</button></a>
         </form>
 
       </div>
@@ -75,7 +75,7 @@
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                 <div>
-                  <strong>Tổng số tiền cần phải thanh toán:</strong>
+                  <strong>Tổng:</strong>
                 </div>
                 <span><strong><?= number_format($data["totalMoney"]) ?> đ</strong></span>
               </li>

@@ -1,5 +1,5 @@
-<h4 style="margin:70px 0 10px 50px ">Chi tiết đơn hàng</h4>
-<table class="table table-striped">
+<h3 style="margin:70px 0 30px 30px; text-align: center">Chi tiết đơn hàng</h3>
+<table class="table table-striped" style="width: 95%;margin: 0 auto;">
   <thead>
     <tr>
       <th scope="col">STT</th>
@@ -8,7 +8,6 @@
       <th scope="col">Giá</th>
       <th scope="col">Số lượng</th>
       <th scope="col">Tổng số tiền</th>
-      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>

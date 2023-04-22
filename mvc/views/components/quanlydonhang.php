@@ -1,4 +1,4 @@
-<h4 style="margin:70px 0 10px 50px ">Quản lý đơn hàng</h4>
+<h3 style="margin:70px 0 30px 30px; text-align: center">Quản lý đơn hàng</h3>
 <table class="table table-striped" style="width: 95%;margin: 0 auto;">
   <thead>
     <tr>
@@ -8,7 +8,6 @@
       <th scope="col">Ngày đặt hàng</th>
       <th scope="col">Tổng số tiền</th>
       <th scope="col">Trạng thái</th>
-      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>

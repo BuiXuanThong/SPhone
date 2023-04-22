@@ -7,7 +7,7 @@
             <!-- Grid column -->
             <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
                 <!-- Links -->
-                <h5>Giới thiệu về chúng tôi</h5>
+                <h5>Về chúng tôi</h5>
                 <p class="foot-desc mb-0">@Nhóm 2 - QLDAPM</p>
             </div>
             <!-- Grid column -->

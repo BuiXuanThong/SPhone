@@ -107,7 +107,7 @@
     echo '<div class="container">';
     echo '<div class="row">';
     for ($i = 0; $i < 4; $i++) {
-      echo '<div class="col-md-3 col-xs-12" style="margin-bottom: 20px">';
+      echo '<div class="col-md-3 col-sm-6 col-xs-12" style="margin-bottom: 20px">';
       echo    '<div class="card">';
       // top left discount tag
       echo '<div class="discount-tag" style="position: absolute; top: 0; left: 0; background-color: red; color: white; padding: 5px; border-radius: 0 0 15px 15px; font-weight: 600; font-size: 14px; width: 50px; text-align: center">-' . number_format(100 - $data["allProductCategory"][$i]["discount"] /  $data["allProductCategory"][$i]["price"] * 100, 0) . '%</div>';

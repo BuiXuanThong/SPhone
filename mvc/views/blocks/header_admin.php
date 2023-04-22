@@ -15,6 +15,8 @@ if ($user != null) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $title ?></title>
+  <!-- <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/sphone.png"> -->
+  <link rel="icon" href="http://example.com/favicon.png">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +94,7 @@ if ($user != null) {
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-user me-2"></i>Phuc Nguyen
+                <i class="fas fa-user me-2"></i>Admin
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Profile</a></li>

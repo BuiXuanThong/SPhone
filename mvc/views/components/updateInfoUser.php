@@ -4,8 +4,10 @@ $user = getUserToken(1);
 
 <div class="row" style="margin: 70px auto 0;width:50%">
 	<div class="col-md-12 table-responsive">
-		<h3>Quản lý tài khoản</h3>
-		<img src="<?= $user["avatar"] ?>" class="img-thumbnail" style="width: 10rem; height: 10rem;" alt="User avatar">
+		<div style="text-align: center">
+			<h3 style="margin-bottom: 20px">Quản lý tài khoản</h3>
+			<img src="<?= $user["avatar"] ?>" class="img-thumbnail" style="width: 10rem; height: 10rem;" alt="User avatar">
+		</div>
 		<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h5 style="color: red;"></h5>
@@ -38,7 +40,9 @@ $user = getUserToken(1);
 						<label for="pwd">Mật Khẩu:</label>
 						<input type="password" class="form-control" id="pwd" name="password" minlength="6">
 					</div>
-					<button class="btn btn-success">Lưu thông tin</button>
+					<div style="text-align: center">
+						<button class="btn btn-success">Lưu thông tin</button>
+					</div>
 				</form>
 			</div>
 		</div>

@@ -28,6 +28,7 @@ foreach ($cart as $item) {
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SPhone</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/sphone.png">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->

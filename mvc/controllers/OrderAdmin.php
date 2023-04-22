@@ -48,10 +48,10 @@ class OrderAdmin extends Controller
             $mail->SMTPSecure = "tls";
             $mail->Port = 587;
             $mail->Host = "smtp.gmail.com";
-            $mail->Username = "sphone.store.tmdt@gmail.com";
-            $mail->Password = "bgsdckeoimlpbnje";
+            $mail->Username = "sphonestoreofficial@gmail.com";
+            $mail->Password = "store123456789";
             $mail->IsHTML(true);
-            $mail->AddReplyTo("sphone.store.tmdt@gmail.com");
+            $mail->AddReplyTo("sphonestoreofficial@gmail.com");
 
             $orderItem = $this->orderModel->getOrderItem($id);
             $email = $orderItem['email'];

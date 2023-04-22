@@ -4,7 +4,7 @@ $isActive = "OrderAdmin";
 require_once('mvc/views/blocks/header_admin.php');
 ?>
 
-<div class="row" style="margin-top: 20px;">
+<div class="row" style="margin-top: 20px; margin-right: 20px">
 	<div class="col-md-12">
 		<h3>Order Detail</h3>
 		<a href="http://localhost/SPhone/OrderAdmin" class="btn btn-outline-primary">Back to Order list</a>
