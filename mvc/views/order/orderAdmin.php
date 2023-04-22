@@ -4,7 +4,7 @@ $activeNav = "order";
 require_once('mvc/views/blocks/header_admin.php');
 ?>
 
-<div class="row" style="margin-top: 20px;">
+<div class="row" style="margin-top: 20px;margin-right: 20px;margin-left: 10px">
 	<div class="col-md-12 table-responsive">
 		<h3>Order</h3>
 

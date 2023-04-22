@@ -35,7 +35,7 @@
           </span>
         </p>
         <p class="pt-1"><?= $data["productItem"]["description"] ?></p>
-        <button onclick="addToCard(<?= $data['productItem']['id'] ?>)" type="button" class="btn btn-light btn-md mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Thêm vào giỏ hàng</button>
+        <button onclick="addToCard(<?= $data['productItem']['id'] ?>)" type="button" class="btn btn-light btn-md mr-1 mb-2" style="color: white; background: linear-gradient(#f52f32,#e11b1e);font-family: sans-serif;"><i class="fas fa-shopping-cart pr-2"></i>Thêm vào giỏ hàng</button>
       </div>
     </div>
 
@@ -88,7 +88,7 @@
             <textarea name="note" id="form76" class="md-textarea form-control pr-6" rows="4"></textarea>
           </div>
           <div class="text-right pb-2">
-            <button class="btn btn-primary" name="btnReview" onclick="checkContentFeedback()">Thêm bài đánh giá</button>
+            <button class="btn btn-primary" style="margin-top: 15px" name="btnReview" onclick="checkContentFeedback()">Thêm bài đánh giá</button>
           </div>
         </form>
       </div>
@@ -117,12 +117,12 @@
       if ($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["price"]) . 'đ';
       echo '</span>';
       echo        '</div>';
-      echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["allProductCategory"][$i]["id"] . ')">Đặt hàng</button>';
+      echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["allProductCategory"][$i]["id"] . ')">Đặt hàng</button>';
       echo    '</div></div>';
     }
     echo '</div></div>';
     ?>
-    <p id="user_id"><?php if (isset($user["id"])) echo $user["id"]; ?></p>
+    <!-- <p id="user_id"><?php if (isset($user["id"])) echo $user["id"]; ?></p> -->
   </div>
 </div>
 <script type="text/javascript">

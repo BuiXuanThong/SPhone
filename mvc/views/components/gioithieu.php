@@ -25,38 +25,8 @@
         </div>
     </div>
     <div>
-        <p class="page-header">CÁC NHÀ SÁNG LẬP</p>
+        <!-- <p class="page-header">CÁC NHÀ SÁNG LẬP</p> -->
         <div class="container textbox">
-            <div class="row m-4">
-                <div class="col-md-6 col-xl-3">
-                    <div class="card-founder">
-                        <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Nguyễn Trọng Phúc</p>
-                        <p>CEO</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="card-founder">
-                        <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Lê Xuân Nghĩa</p>
-                        <p>CMO</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="card-founder">
-                        <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Nguyễn Ngọc Nguyên</p>
-                        <p>CHRO</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="card-founder">
-                        <img src="https://gptgroup.net/img/personnel/img/1650856925245_644234514_leader-img.jpg" alt="founder">
-                        <p>Nguyễn Duy Mạnh</p>
-                        <p>CIO</p>
-                    </div>
-                </div>
-            </div>
             <p class="page-section">Thông điệp từ nhà sáng lập</p>
             <p style="text-align: center;">"Chúng tôi mong mọi người sẽ có trải nghiệm mua sắm tốt nhất." <i class="page-quote">(CEO)</i></p>
             <p style="text-align: center;">"Mọi chính sách của chúng tôi sẽ luôn hướng đến người tiêu dùng." <i class="page-quote">(CMO)</i></p>

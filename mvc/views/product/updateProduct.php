@@ -52,7 +52,7 @@ require_once('mvc/views/blocks/header_admin.php');
                                 <label for="discount">Giảm Giá:</label>
                                 <input type="text" class="form-control" id="discount" name="discount" value="<?= $data["discount"] ?>">
                             </div>
-                            <button class="btn btn-success">Lưu Sản Phẩm</button>
+                            <button class="btn btn-success" style="margin-top: 15px">Lưu Sản Phẩm</button>
                         </div>
 
                     </div>

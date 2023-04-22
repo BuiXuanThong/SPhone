@@ -10,7 +10,7 @@
                 <?php
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
-                    echo    '<div class="card">';
+                    echo    '<div class="card" style="border-radius: 15px">';
                     echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productHuawei"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productHuawei"][$i]["thumbnail"] . '"
@@ -24,7 +24,7 @@
                     if ($data["productHuawei"][$i]["discount"] != 0) echo number_format($data["productHuawei"][$i]["price"]) . 'đ';
                     echo '</span>';
                     echo        '</div>';
-                    echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["productHuawei"][$i]["id"] . ')">Đặt hàng</button>';
+                    echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["productHuawei"][$i]["id"] . ')">Đặt hàng</button>';
                     echo    '</div></div>';
                 }
                 ?>
@@ -42,7 +42,7 @@
                 <?php
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
-                    echo    '<div class="card">';
+                    echo    '<div class="card" style="border-radius: 15px">';
                     echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productIphone"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productIphone"][$i]["thumbnail"] . '"
@@ -56,7 +56,7 @@
                     if ($data["productIphone"][$i]["discount"] != 0) echo number_format($data["productIphone"][$i]["price"]) . 'đ';
                     echo '</span>';
                     echo        '</div>';
-                    echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["productIphone"][$i]["id"] . ')">Đặt hàng</button>';
+                    echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["productIphone"][$i]["id"] . ')">Đặt hàng</button>';
                     echo    '</div></div>';
                 }
                 ?>
@@ -74,7 +74,7 @@
                 <?php
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
-                    echo    '<div class="card">';
+                    echo    '<div class="card" style="border-radius: 15px">';
                     echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productSamsung"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productSamsung"][$i]["thumbnail"] . '"
@@ -88,7 +88,7 @@
                     if ($data["productSamsung"][$i]["discount"] != 0) echo number_format($data["productSamsung"][$i]["price"]) . 'đ';
                     echo '</span>';
                     echo        '</div>';
-                    echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["productSamsung"][$i]["id"] . ')">Đặt hàng</button>';
+                    echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["productSamsung"][$i]["id"] . ')">Đặt hàng</button>';
                     echo    '</div></div>';
                 }
                 ?>
@@ -106,7 +106,7 @@
                 <?php
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
-                    echo    '<div class="card">';
+                    echo    '<div class="card" style="border-radius: 15px">';
                     echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productXiaomi"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productXiaomi"][$i]["thumbnail"] . '"
@@ -120,7 +120,7 @@
                     if ($data["productXiaomi"][$i]["discount"] != 0) echo number_format($data["productXiaomi"][$i]["price"]) . 'đ';
                     echo '</span>';
                     echo        '</div>';
-                    echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["productXiaomi"][$i]["id"] . ')">Đặt hàng</button>';
+                    echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["productXiaomi"][$i]["id"] . ')">Đặt hàng</button>';
                     echo    '</div></div>';
                 }
                 ?>
@@ -138,7 +138,7 @@
                 <?php
                 for ($i = 0; $i < 6; $i++) {
                     echo '<div class="item p-2">';
-                    echo    '<div class="card">';
+                    echo    '<div class="card" style="border-radius: 15px">';
                     echo        '<a href="http://localhost/SPhone/Home/productDetail/' . $data["productNokia"][$i]["id"] . '">
                             <img class="card-img-top "
                                 src="' . $data["productNokia"][$i]["thumbnail"] . '"
@@ -152,7 +152,7 @@
                     if ($data["productNokia"][$i]["discount"] != 0) echo number_format($data["productNokia"][$i]["price"]) . 'đ';
                     echo '</span>';
                     echo        '</div>';
-                    echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["productNokia"][$i]["id"] . ')">Đặt hàng</button>';
+                    echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["productNokia"][$i]["id"] . ')">Đặt hàng</button>';
                     echo    '</div></div>';
                 }
                 ?>

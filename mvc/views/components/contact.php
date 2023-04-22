@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <!--Grid row-->
-                <div style="margin-top:10px" class="text-center text-md-left">
+                <div style="margin-top:15px" class="text-center text-md-left">
                     <button class="btn btn-primary" onclick=checkBtnContact() name="btnContact">Gửi</button>
                 </div>
 
@@ -80,7 +80,7 @@
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>ngtrongphuc1905@gmail.com</p>
+                    <p>nhom2qldapm@gmail.com</p>
                 </li>
             </ul>
         </div>

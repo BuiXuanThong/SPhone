@@ -8,16 +8,7 @@
             <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
                 <!-- Links -->
                 <h5>Giới thiệu về chúng tôi</h5>
-                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-                <p class="foot-desc mb-0">Đội ngũ phát triển gồm 8 thành viên</p>
-                <p class="foot-desc mb-0">Nguyễn Trọng Phúc </p>
-                <p class="foot-desc mb-0">Nguyễn Ngọc Nguyên </p>
-                <p class="foot-desc mb-0">Lê Xuân Nghĩa </p>
-                <p class="foot-desc mb-0">Bùi Xuân Thông </p>
-                <p class="foot-desc mb-0">Nguyễn Hồng Thiện </p>
-                <p class="foot-desc mb-0">Phan Thành Tín </p>
-                <p class="foot-desc mb-0">Nguyễn Duy Mạnh </p>
-                <p class="foot-desc mb-0">Nguyễn Minh Phú </p>
+                <p class="foot-desc mb-0">@Nhóm 2 - QLDAPM</p>
             </div>
             <!-- Grid column -->
             <hr class="clearfix w-100 d-md-none">
@@ -68,8 +59,7 @@
                     <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>SPhone
                     </li>
                     <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
-                    <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>ngtrongphuc1905@gmail.com
-                    </li>
+                    <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>nhom2qldapm@gmail.com</li>
                     <li><span class="fa-li"><i class="far fa-clock"></i></span>Làm việc 24/7</li>
                 </ul>
             </div>

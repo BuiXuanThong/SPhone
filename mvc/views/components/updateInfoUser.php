@@ -38,7 +38,7 @@ $user = getUserToken(1);
 						<label for="pwd">Mật Khẩu:</label>
 						<input type="password" class="form-control" id="pwd" name="password" minlength="6">
 					</div>
-					<button class="btn btn-success">Lưu</button>
+					<button class="btn btn-success">Lưu thông tin</button>
 				</form>
 			</div>
 		</div>

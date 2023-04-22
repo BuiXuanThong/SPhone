@@ -81,10 +81,8 @@ img {
     width: 100%;
     padding: 1px 1px 0 1px;
     border-radius: 10px;
-    background: linear-gradient(135deg,
-            rgb(222, 230, 243) 0%,
-            rgb(167, 136, 233) 100%);
-    transition: all ease-in-out 0.3s;
+    background: white;
+    box-shadow: 5px 5px 5px rgb(230, 230, 230);
 }
 
 .card-in-list {
@@ -92,10 +90,7 @@ img {
     width: 22%;
     padding: 1px 1px 0 1px;
     border-radius: 10px;
-    background: linear-gradient(135deg,
-            rgb(222, 230, 243) 0%,
-            rgb(167, 136, 233) 100%);
-    transition: all ease-in-out 0.3s;
+    background: white;
 }
 
 .card-title {
@@ -104,8 +99,11 @@ img {
 
 .btnOrder {
     width: 70%;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 10px auto;
     border-radius: 20px;
+    background: linear-gradient(#f52f32,#e11b1e);
+    color: white;
+    font-family: sans-serif;
 }
 
 #nav-breadcrumb {

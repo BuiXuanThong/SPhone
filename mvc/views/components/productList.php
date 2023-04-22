@@ -91,7 +91,7 @@
             if ($data["allProductCategory"][$i]["discount"] != 0) echo number_format($data["allProductCategory"][$i]["price"]) . 'đ';
             echo '</span>';
             echo        '</div>';
-            echo        '<button type="button" class="btnOrder btn btn-warning" onclick="addToCard(' . $data["allProductCategory"][$i]["id"] . ')">Đặt hàng</button>';
+            echo        '<button type="button" class="btnOrder btn" onclick="addToCard(' . $data["allProductCategory"][$i]["id"] . ')">Đặt hàng</button>';
             echo    '</div></div>';
         }
         echo '</div></div>';

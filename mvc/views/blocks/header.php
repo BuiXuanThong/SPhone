@@ -97,7 +97,7 @@ foreach ($cart as $item) {
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" method="POST" action="http://localhost/SPhone/Home/search_buttuon">
-                <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Search..." aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" id="search_name" name="search_name" placeholder="Tên sản phẩm..." aria-label="Search">
                 <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
             </form>
             <div style="margin-right: 20px;" class="nav-item dropdown">

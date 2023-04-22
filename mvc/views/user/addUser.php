@@ -47,7 +47,7 @@ require_once('mvc/views/blocks/header_admin.php');
 						<label for="pwd">Password:</label>
 						<input required="true" type="password" class="form-control" id="pwd" name="password" minlength="6">
 					</div>
-					<button class="btn btn-success">Lưu</button>
+					<button class="btn btn-success" style="margin-top: 15px">Lưu thông tin</button>
 				</form>
 			</div>
 		</div>

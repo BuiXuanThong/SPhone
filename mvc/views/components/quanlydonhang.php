@@ -1,5 +1,5 @@
 <h4 style="margin:70px 0 10px 50px ">Quản lý đơn hàng</h4>
-<table class="table table-striped">
+<table class="table table-striped" style="margin: 20px">
   <thead>
     <tr>
       <th scope="col">STT</th>
