@@ -80,7 +80,7 @@
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>nhom2qldapm@gmail.com</p>
+                    <p>sphonestoreofficial@gmail.com</p>
                 </li>
             </ul>
         </div>

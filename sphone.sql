@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 12, 2022 lúc 09:41 AM
--- Phiên bản máy phục vụ: 10.4.21-MariaDB
--- Phiên bản PHP: 8.0.11
+-- Host: 127.0.0.1
+-- Generation Time: Apr 23, 2023 at 12:21 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,15 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `sphone`
+-- Database: `sphone`
 --
+CREATE DATABASE IF NOT EXISTS `sphone` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `sphone`;
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `category`
+-- Table structure for table `category`
 --
 
 CREATE TABLE `category` (
@@ -33,7 +35,7 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `category`
+-- Dumping data for table `category`
 --
 
 INSERT INTO `category` (`id`, `name`) VALUES
@@ -47,7 +49,7 @@ INSERT INTO `category` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `feedback`
+-- Table structure for table `feedback`
 --
 
 CREATE TABLE `feedback` (
@@ -62,19 +64,22 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `feedback`
+-- Dumping data for table `feedback`
 --
 
 INSERT INTO `feedback` (`id`, `note`, `user_id`, `product_id`, `created_at`, `updated_at`, `status`, `user_avatar`) VALUES
 (52, 'Rất tốt', 50, 4, '2022-06-17 11:30:08', '2022-06-17 11:30:08', 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
 (53, 'Sản phẩm tuyệt vời', 50, 1, '2022-06-18 06:02:08', '2022-06-18 06:02:08', 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
 (54, 'Giá thành cạnh tranh nha', 53, 1, '2022-06-18 06:03:52', '2022-06-18 11:28:45', 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(55, 'Tôi rất thích', 55, 1, '2022-06-19 02:50:21', '2022-06-19 02:50:21', 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png');
+(55, 'Tôi rất thích', 55, 1, '2022-06-19 02:50:21', '2023-04-21 12:55:14', 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(56, 'gud', 46, 77, '2023-04-22 15:28:55', '2023-04-22 17:59:22', 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(57, 'nice', 46, 61, '2023-04-22 18:27:39', '2023-04-22 18:27:39', 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(61, 'gud', 57, 61, '2023-04-23 12:15:33', '2023-04-23 12:15:33', 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `orders`
+-- Table structure for table `orders`
 --
 
 CREATE TABLE `orders` (
@@ -91,17 +96,20 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `orders`
+-- Dumping data for table `orders`
 --
 
 INSERT INTO `orders` (`id`, `fullname`, `email`, `phone`, `user_id`, `status`, `deleted`, `address`, `created_at`, `total_money`) VALUES
-(58, 'Phuc Nguyen', 'customer1@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:15:38', 25989999),
-(59, 'Phuc Nguyen', 'ninjavip1st@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:18:05', 25990000);
+(58, 'Customer', 'customer1@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:15:38', 25989999),
+(59, 'Ninja', 'ninjavip1st@gmail.com', '+84388542487', 56, 3, 0, 'Vĩnh Long', '2022-11-12 15:18:05', 25990000),
+(60, 'AkiraKuma5', 'akirakuma5@gmail.com', '0123456789', 46, 3, 0, 'HCM', '2023-04-22 17:41:25', 88960000),
+(61, 'Bui Xuan Thong', 'akirakuma5@gmail.com', '0774559714', 57, 3, 0, 'Hồ Chí Minh', '2023-04-22 18:13:20', 36980000),
+(62, 'Bui Xuan Thong', 'akirakuma5@gmail.com', '0774559714', 57, 3, 0, 'Hồ Chí Minh', '2023-04-23 16:28:56', 20990000);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `order_details`
+-- Table structure for table `order_details`
 --
 
 CREATE TABLE `order_details` (
@@ -114,17 +122,23 @@ CREATE TABLE `order_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `order_details`
+-- Dumping data for table `order_details`
 --
 
 INSERT INTO `order_details` (`id`, `order_id`, `product_id`, `price`, `num`, `total_money`) VALUES
 (101, 58, 61, 25990000, 1, 25990000),
-(102, 59, 61, 25990000, 1, 25990000);
+(102, 59, 61, 25990000, 1, 25990000),
+(103, 60, 58, 20990000, 2, 41980000),
+(104, 60, 59, 18500000, 1, 18500000),
+(105, 60, 61, 25990000, 2, 51980000),
+(106, 61, 58, 20990000, 1, 20990000),
+(107, 61, 61, 25990000, 1, 25990000),
+(108, 62, 61, 25990000, 1, 25990000);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `payments`
+-- Table structure for table `payments`
 --
 
 CREATE TABLE `payments` (
@@ -140,7 +154,7 @@ CREATE TABLE `payments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `payments`
+-- Dumping data for table `payments`
 --
 
 INSERT INTO `payments` (`id`, `order_id`, `user_id`, `money`, `note`, `vnp_response_code`, `code_vnpay`, `code_bank`, `time`) VALUES
@@ -149,7 +163,7 @@ INSERT INTO `payments` (`id`, `order_id`, `user_id`, `money`, `note`, `vnp_respo
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `product`
+-- Table structure for table `product`
 --
 
 CREATE TABLE `product` (
@@ -166,7 +180,7 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`id`, `category_id`, `title`, `price`, `discount`, `thumbnail`, `description`, `created_at`, `updated_at`, `deleted`) VALUES
@@ -212,7 +226,7 @@ INSERT INTO `product` (`id`, `category_id`, `title`, `price`, `discount`, `thumb
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `role`
+-- Table structure for table `role`
 --
 
 CREATE TABLE `role` (
@@ -221,7 +235,7 @@ CREATE TABLE `role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `role`
+-- Dumping data for table `role`
 --
 
 INSERT INTO `role` (`id`, `name`) VALUES
@@ -231,7 +245,7 @@ INSERT INTO `role` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `tokens`
+-- Table structure for table `tokens`
 --
 
 CREATE TABLE `tokens` (
@@ -241,18 +255,22 @@ CREATE TABLE `tokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `tokens`
+-- Dumping data for table `tokens`
 --
 
 INSERT INTO `tokens` (`user_id`, `token`, `created_at`) VALUES
 (46, '3ca9c49d2ce1c3458862ed0580d69cd0', '2022-11-09 02:32:50'),
+(46, '448e83e0060adb75e4984641af5edb07', '2023-04-14 15:04:13'),
+(46, 'c453bec8ca79a470bc43d785bd4b4d66', '2023-04-23 16:29:42'),
+(46, 'fea3e5f85302035a3ebab350f1c0e35e', '2023-04-23 12:16:00'),
 (55, 'baaa4887aef2a00bb07412548b02fe36', '2022-06-19 02:49:42'),
-(56, '3d48921a2fa3fff8b9e69f59393ac999', '2022-11-12 08:50:13');
+(56, '3d48921a2fa3fff8b9e69f59393ac999', '2022-11-12 08:50:13'),
+(57, '8e257f5d796c7074405abf8a48cd4db9', '2023-04-07 16:02:08');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -268,31 +286,32 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `fullname`, `email`, `phone_number`, `address`, `password`, `role_id`, `deleted`, `avatar`) VALUES
-(46, 'admin', 'admin@gmail.com', '0388542487', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 2, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(50, 'Phuc Nguyen', 'user1@gmail.com', '0388542487', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn1.iconfinder.com/data/icons/people-avatars-23/24/people_avatar_head_spiderman_marvel_spider_man-512.png'),
-(51, 'Phúc Nguyễn', 'user2@gmail.com', '0388542487', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(46, 'admin', 'admin@gmail.com', '0388542487', 'Hồ Chí Minh', 'b4cbd48886a5331c5eb2fedadabe311c', 2, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(50, 'User 1', 'user1@gmail.com', '0388542487', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn1.iconfinder.com/data/icons/people-avatars-23/24/people_avatar_head_spiderman_marvel_spider_man-512.png'),
+(51, 'User 2', 'user2@gmail.com', '0388542487', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
 (52, 'Test 123', '123@123.com', '123', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 2, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(53, 'Trọng Phúc', 'phuc.user@gmail.com', '09999999', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(54, 'Phúc Nguyễn', 'user3@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
-(55, 'Demo', 'demo@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn-icons-png.flaticon.com/512/1674/1674291.png'),
-(56, 'Phuc Nguyen', 'customer1@gmail.com', '+84388542487', 'Vĩnh Long, Vũng Liêm', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png');
+(53, 'User', 'user@gmail.com', '09999999', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(54, 'User 3', 'user3@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(55, 'Demo', 'demo@gmail.com', '0906995989', 'Vĩnh Long', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn-icons-png.flaticon.com/512/1674/1674291.png'),
+(56, 'Customer 1', 'customer1@gmail.com', '+84388542487', 'Vĩnh Long, Vũng Liêm', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 1, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png'),
+(57, 'Bui Xuan Thong', 'akirakuma5@gmail.com', '0774559714', 'Hồ Chí Minh', 'b4cbd48886a5331c5eb2fedadabe311c', 1, 0, 'https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `category`
+-- Indexes for table `category`
 --
 ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `feedback`
+-- Indexes for table `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`),
@@ -300,14 +319,14 @@ ALTER TABLE `feedback`
   ADD KEY `productreview` (`product_id`);
 
 --
--- Chỉ mục cho bảng `orders`
+-- Indexes for table `orders`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_orderSuccess` (`user_id`);
 
 --
--- Chỉ mục cho bảng `order_details`
+-- Indexes for table `order_details`
 --
 ALTER TABLE `order_details`
   ADD PRIMARY KEY (`id`),
@@ -315,134 +334,134 @@ ALTER TABLE `order_details`
   ADD KEY `a` (`order_id`);
 
 --
--- Chỉ mục cho bảng `payments`
+-- Indexes for table `payments`
 --
 ALTER TABLE `payments`
   ADD PRIMARY KEY (`id`),
   ADD KEY `paymentUserid` (`user_id`);
 
 --
--- Chỉ mục cho bảng `product`
+-- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
   ADD KEY `category_id` (`category_id`);
 
 --
--- Chỉ mục cho bảng `role`
+-- Indexes for table `role`
 --
 ALTER TABLE `role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `tokens`
+-- Indexes for table `tokens`
 --
 ALTER TABLE `tokens`
   ADD PRIMARY KEY (`user_id`,`token`);
 
 --
--- Chỉ mục cho bảng `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD KEY `role_id` (`role_id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `category`
+-- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
--- AUTO_INCREMENT cho bảng `feedback`
+-- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
--- AUTO_INCREMENT cho bảng `orders`
+-- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
--- AUTO_INCREMENT cho bảng `order_details`
+-- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
--- AUTO_INCREMENT cho bảng `payments`
+-- AUTO_INCREMENT for table `payments`
 --
 ALTER TABLE `payments`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT cho bảng `product`
+-- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
--- AUTO_INCREMENT cho bảng `role`
+-- AUTO_INCREMENT for table `role`
 --
 ALTER TABLE `role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho bảng `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `feedback`
+-- Constraints for table `feedback`
 --
 ALTER TABLE `feedback`
   ADD CONSTRAINT `productreview` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`),
   ADD CONSTRAINT `userreview` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
--- Các ràng buộc cho bảng `orders`
+-- Constraints for table `orders`
 --
 ALTER TABLE `orders`
   ADD CONSTRAINT `fk_orderSuccess` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
--- Các ràng buộc cho bảng `order_details`
+-- Constraints for table `order_details`
 --
 ALTER TABLE `order_details`
   ADD CONSTRAINT `a` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`),
   ADD CONSTRAINT `order_details_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
 
 --
--- Các ràng buộc cho bảng `payments`
+-- Constraints for table `payments`
 --
 ALTER TABLE `payments`
   ADD CONSTRAINT `paymentUserid` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
--- Các ràng buộc cho bảng `product`
+-- Constraints for table `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
 
 --
--- Các ràng buộc cho bảng `tokens`
+-- Constraints for table `tokens`
 --
 ALTER TABLE `tokens`
   ADD CONSTRAINT `fk_token` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
--- Các ràng buộc cho bảng `user`
+-- Constraints for table `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`);

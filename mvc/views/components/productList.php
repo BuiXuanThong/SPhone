@@ -63,11 +63,15 @@
     <?php
     $countCategoyCheck = 0;
     $countProduct = count($data["allProductCategory"]);
-    echo '<p style="font-weight:600">Tổng cộng có ' . $countProduct . ' sản phẩm (Từ: ' . (1 + $data["currentIndex"]) . ' -> ';
-    if ($data["currentIndex"] + 12 < $countProduct)
-        echo $data["currentIndex"] + 12;
-    else echo $countProduct;
-    echo ')</p> ';
+    if($countProduct <= 0) echo '<p style="font-weight:600">Không tìm thấy sản phẩm nào</p>';
+    else
+    {   
+        echo '<p style="font-weight:600">Tổng cộng có ' . $countProduct . ' sản phẩm (Từ: ' . (1 + $data["currentIndex"]) . ' -> ';
+        if ($data["currentIndex"] + 12 < $countProduct)
+            echo $data["currentIndex"] + 12;
+        else echo $countProduct;
+        echo ')</p> ';
+    }
     ?>
     <hr>
     <div class="showproduct">

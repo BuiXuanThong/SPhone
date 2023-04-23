@@ -137,7 +137,7 @@ foreach ($cart as $item) {
     </ul>
     <!-- End Header -->
     <p id="alertSuccess"></p>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function() {
             var action = "search";
             $("#search_name").keyup(function() {
@@ -161,4 +161,4 @@ foreach ($cart as $item) {
                 $("#output_search").html("");
             });
         });
-    </script>
+    </script> -->

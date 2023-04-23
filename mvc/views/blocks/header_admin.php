@@ -15,8 +15,7 @@ if ($user != null) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $title ?></title>
-  <!-- <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/sphone.png"> -->
-  <link rel="icon" href="http://example.com/favicon.png">
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/PhucNguyen1905/SPhone/main/public/images/sphone.png">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">

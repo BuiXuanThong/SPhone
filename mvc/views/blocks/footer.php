@@ -59,7 +59,7 @@
                     <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>SPhone
                     </li>
                     <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
-                    <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>nhom2qldapm@gmail.com</li>
+                    <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>sphonestoreofficial@gmail.com</li>
                     <li><span class="fa-li"><i class="far fa-clock"></i></span>Làm việc 24/7</li>
                 </ul>
             </div>
