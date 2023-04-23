@@ -115,7 +115,7 @@ foreach ($cart as $item) {
                         echo '<a class="dropdown-item" href="http://localhost/SPhone/Login">Đăng nhập</a>';
                         echo '<a class="dropdown-item" href="http://localhost/SPhone/Register">Đăng ký</a>';
                     } else {
-                        if ($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/SPhone/OrderAdmin">Quản lý trang web</a>';
+                        if ($user["role_id"] == 2) echo '<a class="dropdown-item" href="http://localhost/SPhone/OrderAdmin">Quản lý hệ thống</a>';
                         echo '<a class="dropdown-item" href="http://localhost/SPhone/Home/ManageAccount">Quản lý tài khoản</a>';
                         echo '<a class="dropdown-item" href="http://localhost/SPhone/Home/quanlydonhang/' . $user["id"] . '">Quản lý đơn hàng</a>';
                         echo '<a class="dropdown-item" href="http://localhost/SPhone/Login/UserLogout">Đăng xuất</a>';

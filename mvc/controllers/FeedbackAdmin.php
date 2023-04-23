@@ -42,7 +42,7 @@ class FeedbackAdmin extends Controller
                 $subject = getPost('subject');
             if (isset($_POST["message"]))
                 $message = getPost('message');
-            $note = 'Chủ đề ' . $subject . '- Nội dung ' . $message;
+            $note = 'Chủ đề: ' . $subject . ' - Nội dung: ' . $message;
             if (isset($_POST["user_id"]))
                 $user_id = getPost('user_id');
             if (!$user_id)

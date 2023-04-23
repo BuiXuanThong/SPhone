@@ -66,9 +66,9 @@ if ($user != null) {
         <a href="http://localhost/SPhone/FeedbackAdmin" class="<?php echo $activeNav == 'feedback' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">chat</span>Feedback
         </a>
-        <a href="http://localhost/SPhone/Admin" class="<?php echo $activeNav == 'analytic' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
+        <!-- <a href="http://localhost/SPhone/Admin" class="<?php echo $activeNav == 'analytic' ? 'active ' : ' '; ?>list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">insights</span>Analytics
-        </a>
+        </a> -->
         <a href="http://localhost/SPhone/Login/UserLogout" class="list-group-item list-group-item-action transparent second-text fw-bold">
           <span class="material-icons-sharp me-2">logout</span>Logout
         </a>

@@ -36,7 +36,7 @@ class FeedbackModel extends DB
         $updated_at = date("Y-m-d H:i:s");
         $created_at = date("Y-m-d H:i:s");
         $sql = "INSERT INTO feedback (note, user_id, product_id,  created_at, updated_at) 
-                VALUES ('$note', '$userid', 48,'$created_at', '$updated_at')";
+                VALUES ('$note', '$userid', 67,'$created_at', '$updated_at')";
         $this->execute($sql);
     }
 
